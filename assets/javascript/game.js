@@ -20,10 +20,6 @@ $(document).ready(function(){
         currentTotal = 0
         $('#current-total').html(currentTotal)
         $('#total-to-guess').html(totalToGuess) 
-        console.log("crystal1: " + crystal1)  
-        console.log("crystal2: " + crystal2)
-        console.log("crystal3: " + crystal3)
-        console.log("crystal4: " + crystal4)
     }
 
 
