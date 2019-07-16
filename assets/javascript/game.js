@@ -8,6 +8,8 @@ $(document).ready(function(){
     var crystal3 = Math.floor(Math.random() * 10) + 1
     var crystal4 = Math.floor(Math.random() * 10) + 1
     var currentTotal = 0
+    var wins = 0
+    var losses = 0
 
     $('#total-to-guess').html(totalToGuess)
 
@@ -31,10 +33,14 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal1
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
+            losses++
+            $('#losses').html(losses)
             alert("GAME OVER! YOU LOSE!")
             startGame()
         }
         if (currentTotal == totalToGuess){
+            wins++
+            $('#wins').html(wins)
             alert("YOU WIN! GOOD GAME!")
             startGame()
         }
@@ -44,10 +50,14 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal2
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
+            losses++
+            $('#losses').html(losses)
             alert("GAME OVER! YOU LOSE!")
             startGame()
         }
         if (currentTotal == totalToGuess){
+            wins++
+            $('#wins').html(wins)
             alert("YOU WIN! GOOD GAME!")
             startGame()
         }
@@ -57,10 +67,14 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal3
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
+            losses++
+            $('#losses').html(losses)
             alert("GAME OVER! YOU LOSE!")
             startGame()
         }
         if (currentTotal == totalToGuess){
+            wins++
+            $('#wins').html(wins)
             alert("YOU WIN! GOOD GAME!")
             startGame()
         }
@@ -70,10 +84,14 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal4
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
+            losses++
+            $('#losses').html(losses)
             alert("GAME OVER! YOU LOSE!")
             startGame()
         }
         if (currentTotal == totalToGuess){
+            wins++
+            $('#wins').html(wins)
             alert("YOU WIN! GOOD GAME!")
             startGame()
         }
