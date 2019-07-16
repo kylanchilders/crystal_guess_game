@@ -24,6 +24,20 @@ $(document).ready(function(){
         $('#total-to-guess').html(totalToGuess) 
     }
 
+    function win()  {
+        wins++
+        $('#wins').html(wins)
+        alert("YOU WIN! GOOD GAME!")
+        startGame()
+    }
+
+    function lose() {
+        losses++
+        $('#losses').html(losses)
+        alert("GAME OVER! YOU LOSE!")
+        startGame()
+    }
+
 
     $('#start-button').on('click', function() {
         startGame()
@@ -33,16 +47,10 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal1
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
-            losses++
-            $('#losses').html(losses)
-            alert("GAME OVER! YOU LOSE!")
-            startGame()
+            lose()
         }
         if (currentTotal == totalToGuess){
-            wins++
-            $('#wins').html(wins)
-            alert("YOU WIN! GOOD GAME!")
-            startGame()
+            win()
         }
     });
 
@@ -50,16 +58,10 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal2
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
-            losses++
-            $('#losses').html(losses)
-            alert("GAME OVER! YOU LOSE!")
-            startGame()
+            lose()
         }
         if (currentTotal == totalToGuess){
-            wins++
-            $('#wins').html(wins)
-            alert("YOU WIN! GOOD GAME!")
-            startGame()
+            win()
         }
     });
 
@@ -67,16 +69,10 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal3
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
-            losses++
-            $('#losses').html(losses)
-            alert("GAME OVER! YOU LOSE!")
-            startGame()
+            lose()
         }
         if (currentTotal == totalToGuess){
-            wins++
-            $('#wins').html(wins)
-            alert("YOU WIN! GOOD GAME!")
-            startGame()
+            win()
         }
     });
 
@@ -84,16 +80,10 @@ $(document).ready(function(){
         currentTotal = currentTotal + crystal4
         $('#current-total').html(currentTotal);
         if (currentTotal > totalToGuess){
-            losses++
-            $('#losses').html(losses)
-            alert("GAME OVER! YOU LOSE!")
-            startGame()
+            lose()
         }
         if (currentTotal == totalToGuess){
-            wins++
-            $('#wins').html(wins)
-            alert("YOU WIN! GOOD GAME!")
-            startGame()
+            win()
         }
     });
 
